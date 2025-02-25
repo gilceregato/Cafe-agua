@@ -106,7 +106,7 @@ def calcula_blend(agua_1, agua_2, alcalinidade_desejada, volume_desejado):
 
     return volume_1, volume_2, dureza_Ca_blend, dureza_Mg_blend, dureza_total_blend
 
-def converte_alcalinidade_bicarbonato (alcalinidade):
+def converte_alcalinidade_bicarbonato (bicarbonato):
 
     #Faz uma saudação ao usuário com o nome dado. 
     #Breve descrição do que a função realiza. 
@@ -120,9 +120,9 @@ def converte_alcalinidade_bicarbonato (alcalinidade):
 
     #str: Mensagem de saudação. 
     #tipo: descrição do resultado 
-    bicarbonato = alcalinidade * 1.25
+    alcalinidade = bicarbonato * 0.8
 
-    return bicarbonato
+    return alcalinidade
 
 def calcula_mistura_agua (alcalinidade_desejada, volume_desejado, alcalinidade, dureza_Ca, dureza_Mg):
     #Faz uma saudação ao usuário com o nome dado. 
@@ -173,7 +173,7 @@ if __name__ == '__main__':
     st.write('Para mais informações sobre cursos acesse:')
     st.page_link("https://www.instagram.com/thiagomottaas/", label="@thiagomottaas", icon="📷")
 
-    st.write('### Utilize os menus da barra laterial para acessar os módulos específicos da calculadora')
+    st.write('### Utilize os menus da barra lateral para acessar os módulos específicos da calculadora')
     st.write('### Ou se preferir utilize os links abaixo:')
 
     st.page_link("pages/01_Diluição.py", label="Diluição em água destilada", icon="1️⃣")
