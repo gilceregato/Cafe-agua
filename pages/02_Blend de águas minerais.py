@@ -1,5 +1,5 @@
 import streamlit as st
-from Menu import calcula_mistura_agua, calcula_prop_agua_mineral, calcula_blend
+from funcoes import calcula_prop_agua_mineral, calcula_blend
 
 # ----------------------------------------------------------------------
 if __name__ == '__main__':
@@ -13,8 +13,6 @@ if __name__ == '__main__':
     with st.sidebar:
         st.write('## Calculadora de águas para café')
         st.write('Este app foi construído utilizando como base a calculadora do Thiago Motta (@thiagomottaas)')
-        st.write('para mais informações acesse:')
-        st.page_link("https://www.instagram.com/thiagomottaas/", label="@thiagomottaas", icon="📷")
         st.divider()
         st.write('Criado por Gilmar Ceregato @2025')
 
@@ -96,5 +94,3 @@ if __name__ == '__main__':
             st.write(f"- Dureza Mg {volumes[3]:.2f} ppm")
             st.write(f"- Dureza total {volumes[4]:.2f} ppm")
             st.write('obs.: valores em ppm de CaCO3')
-
-
